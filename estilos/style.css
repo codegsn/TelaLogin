@@ -1,12 +1,93 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 
 /*
         Cores!!!
-    1-
-    2-
-    3-
-    4-
+    1-#2b2d42
+    2-#8d99ae
+    3-#edf2f4
+    4-#ef233c
+    5-#d90429
 
+        Fontes!!!
+
+    1-font-family: 'Varela Round', sans-serif;
+    2-
 */
 
+/*
+    Variaveis<------------------
+*/
+:root{
+--cor-principal:#2b2d42;
+--cor-secundaria:#8d99ae;
+--cor-meio:#edf2f4;
+--cor-destaque:#ef233c;
+--cor-destaque2:#d90429;
+
+--fonte-principal: 'Varela Round', sans-serif;
+--fonte-secundaria: 'Arial';
+
+}
+
+/*
+    Configuração de reset<------------------
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    background-color: var(--cor-destaque2);
+
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    position: relative;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    background-color: var(--cor-meio);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.568);
+    height: 500px;
+    width: 250px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login > #imagem{
+    display: block;
+    background-image: url(../imagens/pexels-alex-conchillos-3648850.jpg);
+    height: 200px;
+    transition: 1s;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#login > #imagem:hover{
+    filter: blur(1px);
+    transform: scale(1.1);
+    transition: 40s;
+    
+}
+
+#login > #texto{
+    display: block;
+    padding: 10px;
+}
