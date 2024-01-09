@@ -10,15 +10,38 @@
     -->
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
 <body>
     <main>
         <section id="login">
-            <div id="imagem"></div>
-            <div id="texto">
+            <div id="imagem"><!--imagem no css como background--></div>
+            <div id="forml">
                 <h1>Olá novamente!</h1>
                 <p>Faça login com seu usuário e senha para continuar.</p>
+                <form action="#" method="POST" autocomplete="on">
+                    <div class="campo">
+                        <label for="inomeUsr">Login</label>
+                        <span class="material-symbols-outlined">
+                            account_circle
+                        </span>
+                        <input type="text" name="Login" id="inomeUsr" placeholder="Nome de usuário"  autocomplete="nickname" maxlength="30">
+                    </div>
+                    <div class="campo">
+                        <label for="isenha">Senha</label> 
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+                        <input type="password" name="Senha" id="isenha" placeholder="Digite sua senha"  autocomplete="current-password" minlength="8">                      
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci a senha
+                        <span class="material-symbols-outlined">
+                            contact_support
+                        </span>
+                    </a>
+                </form>
             </div>
         </section>
     </main>

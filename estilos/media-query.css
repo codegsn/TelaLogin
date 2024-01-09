@@ -1,0 +1,101 @@
+@charset "UTF-*";
+
+
+
+/*
+
+    =====TYPICAL DEVICE BREAKPOINT====
+
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+
+*/
+
+
+
+/*
+   TABLETS, Ipads<-----------------
+*/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    body{
+        background: linear-gradient(43deg, #d90429 0%, #eb1c35 12%, #020024 100%);
+
+    }
+    
+    section#login{
+        width: 80%;
+        height: 300px;
+
+    }
+
+    #login > #imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    #login > #forml{
+        float: right;
+        width: 70%;
+    }
+
+}
+
+/*
+   mall screens, laptops<-----------------
+*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        background: linear-gradient(4deg, #d90429 0%, #eb1c35 12%, #020024 100%);
+        
+    }
+    
+    section#login{
+        width: 90%;
+        height: 300px;
+
+    }
+
+    #login > #imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    #login > #forml{
+        float: left;
+        width: 50%;
+    }
+
+}
+/*
+   Desktops, large screens<-----------------
+*/ 
+@media screen and (min-width: 1025px) {
+    body{
+        background-image: url(../imagens/pexels-alex-conchillos-3648850.jpg);
+        
+    }
+    
+    section#login{
+        width: 90%;
+        height: 300px;
+
+    }
+
+    #login > #imagem{
+        background-image: linear-gradient(97deg,#d90429, #490813);
+        float: top;
+        width: 100%;
+        height: 10%;
+    }
+
+    #login > #forml{
+        
+        width: 50%;
+    }
+    
+}

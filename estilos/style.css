@@ -21,6 +21,8 @@
     Variaveis<------------------
 */
 :root{
+--cor1: #fff;
+--cor2: #000;
 --cor-principal:#2b2d42;
 --cor-secundaria:#8d99ae;
 --cor-meio:#edf2f4;
@@ -54,15 +56,19 @@ main{
 
     height: 100vh;
     width: 100vw;
+
 }
 
-section#login{
+
+section#login{                                      /*    configuração tela login<------------------*/
     background-color: var(--cor-meio);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.568);
     height: 500px;
     width: 250px;
-    border-radius: 30px;
+    border-radius: 30px 30px 10px 10px;
     overflow: hidden;
+
+    
 
     position: absolute;
     left: 50%;
@@ -70,24 +76,126 @@ section#login{
     transform: translate(-50%, -50%);
 }
 
-#login > #imagem{
+#login > #imagem{                                   /*    imagem da tela de login<------------------*/
     display: block;
     background-image: url(../imagens/pexels-alex-conchillos-3648850.jpg);
     height: 200px;
-    transition: 1s;
+
+    transition: .6s;
+    transition-timing-function: ease;
     
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
-#login > #imagem:hover{
+#login > #imagem:hover{                             /*    hover Imagem<------------------*/
     filter: blur(1px);
     transform: scale(1.1);
     transition: 40s;
+}
+
+#login > #forml{                                    /*   formulario<------------------*/
+    display: block;
+    padding: 10px;
+
+}
+
+#login > #forml > h1{                               /*    Cabeçalho<------------------*/
+    text-align: center;
+}
+
+#login > #forml > p{                               /*    Paragrafo<------------------*/
+    font-size: 1em;
+}
+.campo{                                            /*    formatação labels de texto<------------------*/
+    background-color: var(--cor-principal);
+    border-radius: 80px;
+    width: 100%;
+    height: 51px;
+    margin: 5px 0;
+}
+
+.campo > label{
+    display: none; /*nao esta sendo usado===========*/
+    font-size: .9em;
+    color: var(--cor1);
+    padding-left: 5px;
+}
+
+.campo span{                                    /*    formatação icones - usuario e senha<------------------*/
+    color: var(--cor-destaque);
+    background-color: var(--cor-meio);
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid var(--cor-destaque);
+
+    transform: translate(1px, 4px);
+}
+
+.campo input{                               /*          formatação da entrada de texto login e senha*/
+    background-color: #ffffff;
+    color: var(--cor-destaque2);
+
+    width: calc(100% - 47px);
+    height: 47px;
+    padding-left: 5px;
+    border-radius: 80px;
+    border: none;
+    
+    transform: translate(-1px, -3px);
+}
+
+form > input[type=submit]{                          /*    Botao entrar<------------------*/
+    display: block;
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--cor-destaque2);
+    color: var(--cor1);
+    border-radius: 80px;
+    border: 1px;
+
+    font-size: 1.1em;
     
 }
 
-#login > #texto{
-    display: block;
-    padding: 10px;
+form > input[type=submit]:hover{                          /*    Botao entrar<------------------*/
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: .1s;
+    
 }
+
+form >  a{                                          /*    Botao Esqueci Senha<------------------*/
+    display: block;
+    padding-top: 8px;
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--cor1);
+    color: var(--cor-destaque2);
+    border-radius: 80px;
+    border: 2px solid var(--cor-destaque2);
+    
+    text-align: center;
+    font-size: 1.1em;
+    text-decoration: none;
+
+}
+
+form >  a:hover {                                   /*    hover Esqueci senha<------------------*/
+    background-color: var(--cor-destaque);
+    color: var(--cor1);
+     
+ }
+
+form >  a > .material-symbols-outlined{             /*    icone Esqueci Senha<------------------*/
+    display: inline-flex;
+    transform: translate(-15%, 12%);
+    font-size: 1.3em;
+    right: 20%;
+    
+}
+
+
