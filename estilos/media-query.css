@@ -28,13 +28,22 @@ Extra large screens, TV – 1201px, and more.
     section#login{
         width: 80%;
         height: 300px;
+        border-radius: 30px;
 
     }
 
     #login > #imagem{
+        background-image: url(../imagens/nier-automata-2b-desktop-wallpaper.jpg);
+        background-position: -260px;
         float: left;
         width: 30%;
         height: 100%;
+    }
+
+    #login #imagem:hover{                             /*    hover Imagem<------------------*/
+        background-position: right bottom;
+        background-position: -190px;
+        transition: 0.3s;
     }
 
     #login > #forml{
@@ -47,7 +56,7 @@ Extra large screens, TV – 1201px, and more.
 /*
    mall screens, laptops<-----------------
 */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1025px) {
     body{
         background: linear-gradient(4deg, #d90429 0%, #eb1c35 12%, #020024 100%);
         
@@ -56,13 +65,20 @@ Extra large screens, TV – 1201px, and more.
     section#login{
         width: 90%;
         height: 300px;
+        border-radius: 30px;
 
     }
 
     #login > #imagem{
         float: right;
+        background-size: calc(100vw - 90px);
         width: 50%;
         height: 100%;
+        background-position: right top;
+    }
+
+    #login #imagem:hover{                             /*    hover Imagem<------------------*/
+        background-position: right bottom;
     }
 
     #login > #forml{
@@ -79,23 +95,53 @@ Extra large screens, TV – 1201px, and more.
         background-image: url(../imagens/pexels-alex-conchillos-3648850.jpg);
         
     }
+
+    span{
+        
+    }
     
     section#login{
-        width: 90%;
-        height: 300px;
-
+        width: 80%;
+        height: 350px;
+        float: center;
+        border-radius: 30px;
+        
     }
 
     #login > #imagem{
-        background-image: linear-gradient(97deg,#d90429, #490813);
-        float: top;
-        width: 100%;
-        height: 10%;
+        background-image: url(../imagens/nier-automata-2b-desktop-wallpaper.jpg);
+        background-position: -50px 90px;
+        scale: 250%;
+        float: right;
+        width: 60%;
+        height: 100%;
+    }
+
+    #login > #imagem:hover{                             /*    hover Imagem<------------------*/
+        filter: blur(2px);
+        background-position: 90% 90%;
+        transform: scale(1.1);
+        transition: .8s;
     }
 
     #login > #forml{
-        
-        width: 50%;
+        position: fixed;
+        width: 45%;
     }
     
+    #login > #forml > h1{                               /*    Cabeçalho<------------------*/
+        text-align: left;
+        font-size: 1.8em;
+        white-space: nowrap;
+        color: var(--cor-destaque2);
+        
+    }
+    
+    #login > #forml > p{                               /*    Paragrafo<------------------*/
+        font-size: 1.1em;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        padding: 5px;
+    }
 }

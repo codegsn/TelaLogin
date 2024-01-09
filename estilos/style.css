@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
 
 /*
@@ -30,12 +31,12 @@
 --cor-destaque2:#d90429;
 
 --fonte-principal: 'Varela Round', sans-serif;
---fonte-secundaria: 'Arial';
+--fonte-secundaria: 'Lilita One', sans-serif;;
 
 }
 
 /*
-    Configuração de reset<------------------
+    Configuração de reset e padroes da pagina<------------------
 */
 *{
     padding: 0;
@@ -63,9 +64,9 @@ main{
 section#login{                                      /*    configuração tela login<------------------*/
     background-color: var(--cor-meio);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.568);
-    height: 500px;
+    height: 520px;
     width: 250px;
-    border-radius: 30px 30px 10px 10px;
+    border-radius: 30px;
     overflow: hidden;
 
     
@@ -86,12 +87,11 @@ section#login{                                      /*    configuração tela lo
     
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left top;
 }
-#login > #imagem:hover{                             /*    hover Imagem<------------------*/
-    filter: blur(1px);
-    transform: scale(1.1);
-    transition: 40s;
+#login #imagem:hover{                             /*    hover Imagem<------------------*/
+    background-position: right bottom;
+    transition: 3s;
 }
 
 #login > #forml{                                    /*   formulario<------------------*/
@@ -102,10 +102,17 @@ section#login{                                      /*    configuração tela lo
 
 #login > #forml > h1{                               /*    Cabeçalho<------------------*/
     text-align: center;
+    color: var(--cor-destaque2);
+    font-size: 1.2em;
+    font-family: var(--fonte-principal);
 }
 
 #login > #forml > p{                               /*    Paragrafo<------------------*/
-    font-size: 1em;
+    font-size: .8em;
+    text-align: left;
+    font-family: var(--fonte-principal);
+
+    padding: 5px;
 }
 .campo{                                            /*    formatação labels de texto<------------------*/
     background-color: var(--cor-principal);
@@ -124,25 +131,25 @@ section#login{                                      /*    configuração tela lo
 
 .campo span{                                    /*    formatação icones - usuario e senha<------------------*/
     color: var(--cor-destaque);
-    background-color: var(--cor-meio);
+    background-color: var(--cor1);
     border-radius: 50%;
     padding: 8px;
-    border: 1px solid var(--cor-destaque);
+    border: 3px solid var(--cor-destaque);
 
-    transform: translate(1px, 4px);
+    transform: translate(3px, 3px);
 }
 
 .campo input{                               /*          formatação da entrada de texto login e senha*/
     background-color: #ffffff;
     color: var(--cor-destaque2);
 
-    width: calc(100% - 47px);
+    width: calc(100% - 53px);
     height: 47px;
     padding-left: 5px;
     border-radius: 80px;
     border: none;
     
-    transform: translate(-1px, -3px);
+    transform: translate(1px, -4px);
 }
 
 form > input[type=submit]{                          /*    Botao entrar<------------------*/
