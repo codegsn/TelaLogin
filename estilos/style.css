@@ -149,7 +149,7 @@ section#login{                                      /*    configuração tela lo
     border-radius: 80px;
     border: none;
     
-    transform: translate(1px, -4px);
+    transform: translate(1px, -5px);
 }
 
 form > input[type=submit]{                          /*    Botao entrar<------------------*/

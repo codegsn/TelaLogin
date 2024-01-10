@@ -43,7 +43,7 @@ Extra large screens, TV – 1201px, and more.
     #login #imagem:hover{                             /*    hover Imagem<------------------*/
         background-position: right bottom;
         background-position: -190px;
-        transition: 0.3s;
+        transition: 0.9s;
     }
 
     #login > #forml{
